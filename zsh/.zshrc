@@ -1,36 +1,11 @@
-# Lucas' .zshrc file.
-# https://github.com/lucascosti/mac-config/zsh/
-
 ######## oh-my-zsh stuff  ########
 
-# If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-# Path to your oh-my-zsh installation.
-export ZSH="/Users/lucascosti/.oh-my-zsh"
-# Which plugins would you like to load?
-# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=()
-
-source $ZSH/oh-my-zsh.sh
-
-######## Lucas' custom stuff below here ########
-
 ## Path to the dir containing my zsh scripts
-export ZSH_SCRIPTS_DIR=~/repos/mac-config/zsh/zshscripts
+export ZSH_SCRIPTS_DIR=~/centos-config/zsh/zshscripts
 
 ## Source powerlevel10k & my theme
 source $ZSH_SCRIPTS_DIR/powerlevel10k/powerlevel10k.zsh-theme
 source $ZSH_SCRIPTS_DIR/themes/p10k-lucas.zsh
-
-# Load brew completions (from https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh)
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-  autoload -Uz compinit
-  compinit
-fi
 
 # Load completions (e.g. for git completion)
 autoload -Uz compinit && compinit
@@ -87,11 +62,6 @@ compctl -K _cmpl_cheat cheat
 ## Regular aliases
 ### zsh sudo last command:
 alias ffs='sudo $(fc -ln -1)'
-### Brew aliases
-alias bi='brew install'
-alias br='brew uninstall'
-alias bupd='brew update'
-alias bupg='brew upgrade'
 ### Git aliases
 alias g='git'
 alias gfu='git fetch upstream'
