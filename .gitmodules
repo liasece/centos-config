@@ -1,12 +1,13 @@
+
 [submodule "zsh/zshscripts/zsh-syntax-highlighting"]
-path = zsh/zshscripts/zsh-syntax-highlighting
-url = git@github.com:zsh-users/zsh-syntax-highlighting.git
+	path = zsh/zshscripts/zsh-syntax-highlighting
+	url = git@github.com:zsh-users/zsh-syntax-highlighting.git
 [submodule "zsh/zshscripts/powerlevel10k"]
-path = zsh/zshscripts/powerlevel10k
-url = git@github.com:romkatv/powerlevel10k.git
+	path = zsh/zshscripts/powerlevel10k
+	url = git@github.com:romkatv/powerlevel10k.git
 [submodule "zsh/zshscripts/cheatsheets"]
-path = zsh/zshscripts/cheatsheets
-url = git@github.com:cheat/cheatsheets.git
+	path = zsh/zshscripts/cheatsheets
+	url = git@github.com:cheat/cheatsheets.git
 [submodule "zsh/zshscripts/zsh-autosuggestions"]
-path = zsh/zshscripts/zsh-autosuggestions
-url = https://github.com/zsh-users/zsh-autosuggestions
+	path = zsh/zshscripts/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
